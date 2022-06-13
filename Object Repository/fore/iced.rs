@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>iced</name>
+   <tag></tag>
+   <elementGuidId>6224488b-aa74-43a5-b5eb-f3fcc897bda6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//androidx.appcompat.app.ActionBar.b[@content-desc=&quot;ICED&quot;]/android.widget.TextView</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//androidx.appcompat.app.ActionBar.b[@content-desc=&quot;ICED&quot;]/android.widget.TextView</value>
+   </webElementProperties>
+</WebElementEntity>
