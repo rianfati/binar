@@ -1,0 +1,39 @@
+Petunjuk Automasi:
+
+Preparasi:
+1. Download Katalon Studio
+2. Download Android Studio
+3. Download Appium jika ingin melakukan inspeksi element
+4. Download file project dari github ( https://github.com/rianfati/binar )
+5. Simpan file project didalam folder yang telah ditentukan
+
+Konfigurasi Android Studio:
+1. Klik icon AVD Manager
+2. Click button Create Virtual Device
+3. Ikuti petunjuk untuk membuat virtual device
+4. Setelah membuat virtual device, hidupkan dengan klik tombol 'play' di list virtual device
+5. tunggu sampai virtual device berhasil booting
+
+Konfigurasi Katalon Studio:
+1. Open folder file project yang telah di download
+2. jika berhasil, akan tampil isi project pada saat membuka katalon seperti test case, object repository dan lain-lain
+3. Copy file test case dan paste di folder "Test Cases" dari project yang baru dibuat
+4. Copy file-file object repository dan paste di folder "Object Repository" dari project yang baru dibuat
+5. Check script test case apakah sudah muncul atau belum dengan double klik file di katalon studio
+3. Untuk running automation, pastikan device sudah terdeteksi di katalon studio dengan cara sebagai berikut:
+	a. klik project
+	b. klik setting
+	c. klik desired capabilities
+	d. klik mobile
+	e. klik android
+	f. pada bagian device name, klik drop down button dan pastika virtual device kita terdeteksi disana
+	g. klik button add untuk menambahkan attribute appWaitActivity dengan tipe String dan value bintang "*"
+	h. jika sudah, klik apply dan ok
+4. Untuk mulai running klik test cases
+5. Click double fore login 
+6. Click drop down button pada sebelah kanan tombol "play" di sebelah kanan atas
+5. klik android
+
+NOTE:
+Jika file test berisi kosong, maka bisa copy paste script dari file "TEST_CASE_LOGIN_FORE"
+paste ke file test case yang telah dibuat sebelumnya
