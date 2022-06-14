@@ -69,6 +69,7 @@ else {
 }
 Mobile.tap(findTestObject('fore/tambahlagi'), 0)
 Mobile.swipe(100, 1642, 100, 642)
+Mobile.swipe(100, 1642, 100, 642)
 Mobile.tap(findTestObject('fore/merchandise'), 0)
 Mobile.tap(findTestObject('fore/stainlessstraw'), 0)
 if (Mobile.verifyElementExist(findTestObject('fore/stainlessstrawdescription'), 2, FailureHandling.OPTIONAL)){
