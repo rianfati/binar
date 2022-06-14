@@ -33,7 +33,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('D:\\Android\\fore.apk', true)
-
+Mobile.waitForElementPresent(findTestObject('fore/slider'), 0)
 Mobile.swipe(170, 1642, 1017, 1642)
 Mobile.tap(findTestObject('fore/xbutton'), 0)
 Mobile.tap(findTestObject('fore/xbutton2'), 0)
@@ -44,7 +44,7 @@ if (Mobile.verifyElementExist(findTestObject('fore/xbuttonlanjut'), 2, FailureHa
 else {
 	Mobile.tap(findTestObject('fore/storelocation'), 0)
 }
-
+Mobile.waitForElementPresent(findTestObject('fore/manuka'), 0)
 Mobile.tap(findTestObject('fore/manuka'), 0)
 Mobile.tap(findTestObject('fore/manukaamericano'), 0)
 Mobile.tap(findTestObject('fore/iced'), 0)
@@ -68,16 +68,18 @@ else {
 	System.out.println('ERROR')
 }
 Mobile.tap(findTestObject('fore/tambahlagi'), 0)
-//Mobile.swipe(100, 1642, 100, 642)
-//Mobile.tap(findTestObject('fore/merchandise'), 0)
-//Mobile.tap(findTestObject('fore/stainlessstraw'), 0)
-//Mobile.swipe(170, 1642, 170, 642)
-//Mobile.tap(findTestObject('fore/keranjang'), 0)
-Mobile.tap(findTestObject('fore/pesan'), 0)
+Mobile.swipe(100, 1642, 100, 642)
+Mobile.tap(findTestObject('fore/merchandise'), 0)
+Mobile.tap(findTestObject('fore/stainlessstraw'), 0)
+if (Mobile.verifyElementExist(findTestObject('fore/stainlessstrawdescription'), 2, FailureHandling.OPTIONAL)){
+	Mobile.swipe(170, 1642, 170, 642)
+	Mobile.tap(findTestObject('fore/keranjang'), 0)
+	Mobile.tap(findTestObject('fore/pesan'), 0)
+}
+else {
+	Mobile.tap(findTestObject('fore/pesan'), 0)
+}
 Mobile.setText(findTestObject('fore/nomorponsel'), '098762', 0)
 Mobile.tap(findTestObject('fore/ceknomor'), 0)
-
-
-
 
 
